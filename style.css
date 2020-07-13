@@ -1,0 +1,87 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 600px;
+    margin-top: 5%;
+}
+.player-turn{
+    background-color: turquoise;
+    color: blue;
+}
+div{
+    margin-top: 10px;
+}
+.monster-turn{
+    background-color: rosybrown;
+    color: red;
+}
+
+.bar{
+    width: 250px;
+    height: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    background-color: yellowgreen;
+    color: white;
+}
+li{
+    list-style: none;
+    margin-top: 10px;
+}
+#saldiri{
+    background-color: sandybrown;
+    color: red;
+    text-transform: uppercase;
+    line-height: 20px;
+    font-size: 20px;
+    padding : 10px;
+    border : none;
+    margin-right: 10px;
+}
+#ssaldiri{
+    background-color: tomato;
+    color: violet;
+    text-transform: uppercase;
+    line-height: 20px;
+    font-size: 20px;
+    padding : 10px;
+    border : none;
+    margin-right: 10px;
+}
+#heal{
+    background-color: green;
+    color: white;
+    text-transform: uppercase;
+    line-height: 20px;
+    font-size: 20px;
+    padding : 10px;
+    border : none;
+    margin-right: 10px;
+}
+#surrender{
+    background-color: grey;
+    color: black;
+    text-transform: uppercase;
+    line-height: 20px;
+    font-size: 20px;
+    padding : 10px;
+    border : none;
+    margin-right: 10px;
+}
+#newgame{
+    margin-top: 15px;
+    width: 175px;
+    background-color: green;
+    color: black;
+    text-transform: uppercase;
+    line-height: 20px;
+    font-size: 20px;
+    padding : 10px;
+    border : none;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <div class="container" id="app">
+        <div>
+            <h1>PLAYER</h1>
+            <div :style="divStyle" class="bar"> {{ hesap1 +"%"}}</div>
+        </div>
+        <div>
+            <h1>MONSTER</h1>
+            <div :style="divStyle2" class="bar"> {{ hesap2 +"%"}}</div>
+        </div>
+        <button @click="basla" v-if="ilk" id="newgame">New Game</button>
+        <div class="buttons" v-if="oyun">
+            <button @click = "attack" id="saldiri">Attack</button>
+            <button @click = "sattack" id="ssaldiri">Special Attack</button>
+            <button @click = "heal" id="heal">Healing </button>
+            <button @click = "surrender" id="surrender">Give Up</button> 
+        </div>
+        <div class="results" v-if="oyun">
+            <div >
+                <ul>
+                    <li v-for="logs in log" :class="{ 'player-turn' : logs.turn == 'p' , 'monster-turn' : logs.turn == 'm' }">{{logs.text}}</li> 
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
