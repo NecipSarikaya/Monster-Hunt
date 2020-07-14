@@ -28,7 +28,6 @@ new Vue({
             this.hesap2 = (this.monsterhealth * 100) /250
             this.log.push({turn :"m", text :"Dealt damage by monster attack  "+this.normalattack+""});
             this.divStyle2 = "width:" + this.monsterhealth + "px";
-            this.showattack();
             this.winner();
         },
         sattack : function(){
